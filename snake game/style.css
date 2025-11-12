@@ -1,0 +1,48 @@
+#gameContainer{
+    text-align: center;
+}
+
+#gameBoard{
+    border: 3px solid;
+    color: #06481f;
+    border-width: 5px;
+}
+
+#score{
+    font-family: "permanent Marker", cursive;
+    font-size: 3em;
+    color: #fefefe;
+}
+
+#resetBtn{
+    font-family: "permanent Marker", cursive;
+    font-size: 2em;
+    width: 150px;
+    height: 55px;
+    border-radius: 17px;
+    text-align: top;
+    border: 5px solid #06481f;
+    cursor: pointer;
+    color: #fefefe;
+    background-color: black;
+    transition: 0.3ms ease;
+   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    
+}
+ #resetBtn:hover {
+    background-color: #06481f;
+    transform: scale(1.1);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+#navbar{
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 2em;
+    font-family: "permanent Marker", cursive;
+    color: #fefefe;
+ 
+    
+}
+
+body{background-color: black} 
