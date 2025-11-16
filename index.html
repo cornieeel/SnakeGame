@@ -1,148 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dating App – Sign Up</title>
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SNAKE GAME</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <h1>Register in order to meet your soulmate!</h1>
-  <form action="#" method="post" class="registration-form">
+    <nav id="navbar">welcome to the snake game </nav>
 
-
-    <div class="form-sections">
-      <!-- Left column -->
-       <section>
-<fieldset class="left" aria-labelledby="signupTitle">
-        <legend id="signupTitle" class="legendTitle">Sign Up</legend>
-
-        <div>
-          <label for="fullname">Full Name</label>
-          <input type="text" id="fullname" name="fullname" placeholder="Cornel Negru" pattern="[A-Za-zÀ-ž\s\-]+"
-            title="Only letters, spaces, and hyphens allowed" required>
-        </div>
-
-        <div>
-          <label for="email">Email Address</label>
-          <input type="email" id="email" name="email" placeholder="cornel@example.com" required>
-        </div>
-
-        <div>
-          <label for="password">Password</label>
-          <input type="password" id="password" name="password" pattern="(?=.*[A-Z]).{8,}"
-            title="Password must be at least 8 characters long and contain at least one uppercase letter" required>
-        </div>
-
-        <div>
-          <label for="dob">Date of Birth</label>
-          <input type="date" id="dob" name="dob" required>
-        </div>
-
-        <fieldset class="subgroup">
-          <legend>Gender</legend>
-          <label><input type="radio" name="gender" value="male" required> Male</label>
-          <label><input type="radio" name="gender" value="female"> Female</label>
-          <label><input type="radio" name="gender" value="pnts"> Prefer not to say</label>
-        </fieldset>
-
-        <div>
-          <label for="file">Choose your profile picture</label>
-          <input type="file" id="file" name="file">
-        </div>
-
-
-      </fieldset>
-
-       </section>
-      
-
-
-
-
-      <!-- Right column -->
-       <section>
-
-<fieldset class="right" aria-labelledby="personalTitle">
-        <legend id="personalTitle" class="legendTitle">Personal Information</legend>
-        <div>
-          <label for="prefer">Who do you prefer?</label>
-          <select id="prefer" name="prefer" required>
-            <option value="" selected disabled>Select preference...</option>
-            <option value="female">Female</option>
-            <option value="male">Male</option>
-            <option value="nonbinary">Non-binary</option>
-            <option value="any">Any</option>
-          </select>
-        </div>
-
-        <div>
-          <label for="looking">What are you looking for?</label>
-          <select id="looking" name="looking" required>
-            <option value="" selected disabled>Select type...</option>
-            <option value="longterm">Long-term relationship</option>
-            <option value="friendship">Friendship</option>
-            <option value="casual">Casual dating</option>
-            <option value="undecided">Undecided</option>
-          </select>
-        </div>
-
-
-
-        <div>
-          <label for="agepref">Age Preference: <span id="ageValue">18</span></label>
-          <input type="range" id="agepref" name="agepref" min="18" max="90" value="18"
-            oninput="ageValue.textContent = this.value">
-
-
-        </div>
-
-
-        <div>
-          <label for="location">Location</label>
-          <input type="text" id="location" name="location" placeholder="Horsens" pattern="[A-Za-zÀ-ž\s\-]+"
-            title="Letters, spaces, and hyphens only">
-        </div>
-
-
-        <div class="biography"><label for="bio">Biography</label>
-          <textarea id="bio" name="bio" rows="3" maxlength="250"
-            placeholder="Write a short bio (max 250 characters)"></textarea>
-        </div>
-
-        <div>
-          <fieldset class="interests">
-            <legend>Interests</legend>
-            <label><input type="checkbox" name="interests" value="music"> Music</label>
-            <label><input type="checkbox" name="interests" value="sports"> Sports</label>
-            <label><input type="checkbox" name="interests" value="travel"> Travel</label>
-            <label><input type="checkbox" name="interests" value="reading"> Reading</label>
-            <label><input type="checkbox" name="interests" value="cooking"> Cooking</label>
-            <label><input type="checkbox" name="interests" value="gaming"> Gaming</label>
-            <label><input type="checkbox" name="interests" value="art"> Art</label>
-          </fieldset>
-
-        </div>
-        <div>
-
-          <fieldset class="notifications">
-            <legend>Notifications</legend>
-            <label><input type="checkbox" name="notifications" value="email-updates"> Receive email updates</label>
-            <label><input type="checkbox" name="notifications" value="match-notifications"> Receive match
-              notifications</label>
-            <label><input type="checkbox" name="notifications" value="promotional-offers"> Receive promotional
-              offers</label>
-          </fieldset>
-        </div>
-      </fieldset>
-       </section>
-      
+<div id="gameContainer">
+    <div class="gamepay">   
+        <div id="gameBoard"></div>
+        <div id="score">0</div>
+        <button id="resetBtn">Reset</button>
     </div>
 
-    <button type="submit">Confirm</button>
-  </form>
-</body>
+    <div id= "info">
+        How to play.
+        <p>To play the classic "Snake" game, use arrow keys to guide a snake to eat food without hitting the walls or its own body. Each time the snake eats food, it gets longer, and the goal is to grow as large as possible before the game ends</p>
+    </div>
 
+    <div id="stats">
+        <h1>Stats</h1>
+        <div id="game played">game played:</div><br>
+        <div id="wins">wins:</div><br>
+        <div id="loss">loss:</div><br>
+        <div id="win%">win %:</div><br>
+    </div>
+</div>
+    
+</body>
 </html>

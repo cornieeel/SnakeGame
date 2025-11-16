@@ -1,7 +1,18 @@
+<<<<<<< HEAD
 
 
 
 
+=======
+
+body{
+display:flex;
+flex-direction: column;
+align-items: center;
+
+background-color: black
+} 
+>>>>>>> a890afe8db2cc52b84cbc32ca8b883bc62a7771f
 
 #gameContainer{
     text-align: center;
@@ -20,10 +31,16 @@
     border-width: 5px;
     height: 500px;
     width: 500px;
+<<<<<<< HEAD
     align-items: center;
     justify-content: center;
     text-align: center;
     display: grid;
+=======
+   display: grid;
+   grid-template-columns: repeat(25, 20px);
+   grid-template-rows: repeat(25, 20px);
+>>>>>>> a890afe8db2cc52b84cbc32ca8b883bc62a7771f
     
 }
 
@@ -64,11 +81,8 @@
     
 }
 
-body{
-display:flex;
-flex-direction: column;
-align-items: center;
 
+<<<<<<< HEAD
 background-color: black;
 } 
 
@@ -103,3 +117,22 @@ background-color: black;
     font-family: "permanent Marker", cursive;
 
 }
+=======
+
+.cell {
+  width: 20px;
+  height: 20px;
+  background: #000;
+  /* border: 1px solid white; */
+
+}
+
+.snake {
+  background: green;
+}
+
+.food {
+  background: red;
+}
+
+>>>>>>> a890afe8db2cc52b84cbc32ca8b883bc62a7771f
