@@ -42,7 +42,9 @@ cells[food].classList.add('food');}
 
     resetButton.addEventListener('click', function(){
       clearBoard();
-      startGame();
+      startGame(); 
+      
+      
     })
 
 
