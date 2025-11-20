@@ -2,6 +2,8 @@ const board = document.getElementById('gameBoard');
 const boardSize = 25;
 const totalCells = Math.pow(boardSize, 2);
 const resetButton = document.getElementById('resetBtn');
+let score = document.getElementById("score");
+score.innerHTML = 0;
 
 const cells = [];
 for (let i = 0; i < totalCells; i++) {
@@ -12,6 +14,9 @@ for (let i = 0; i < totalCells; i++) {
 }
 
 const snakeLength = 1;
+
+startGame();
+
 
 
 
@@ -31,12 +36,7 @@ snake.forEach(i => {
     cells[i].classList.add('snake');
   }
 });
-function moveSnake(){
-  let snakeHead;
-  
 
-  
-}
 cells[food].classList.add('food');}
 
 
@@ -46,6 +46,23 @@ cells[food].classList.add('food');}
       
       
     })
+
+
+function tick(){
+  setTimeout(()=>{
+    clearBoard();
+    drawSnake();
+    growSnake();
+    checkPositionOfFood();
+    tick();
+  },100);
+}
+
+function checkPositionOfFood(){}
+function growSnake(){
+
+}
+function drawSnake(){}
 
 
 
