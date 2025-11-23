@@ -18,18 +18,15 @@ for (let i = 0; i < totalCells; i++) {
 }
 
 let gamesPlayed = 0;
-let losses = 0;
 let lastScore = 0;
 let biggestScore = 0;
 
 const gamesPlayedDiv = document.getElementById("gamesPlayed");
-const lossesDiv = document.getElementById("losses");
 const lastScoreDiv = document.getElementById("lastScore");
 const biggestScoreDiv = document.getElementById("biggestScore");
 
 //-Load saved stats from localStorage-
 if (localStorage.getItem("gamesPlayed")) gamesPlayed = parseInt(localStorage.getItem("gamesPlayed"));
-if (localStorage.getItem("losses")) losses = parseInt(localStorage.getItem("losses"));
 if (localStorage.getItem("lastScore")) lastScore = parseInt(localStorage.getItem("lastScore"));
 if (localStorage.getItem("biggestScore")) biggestScore = parseInt(localStorage.getItem("biggestScore"));
 
@@ -101,7 +98,6 @@ function moveHead() {
     localStorage.setItem("lastScore", lastScore);
     localStorage.setItem("biggestScore", biggestScore);
     localStorage.setItem("gamesPlayed", gamesPlayed);
-    localStorage.setItem("losses", losses);
 
     updateStats();
     return;
