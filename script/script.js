@@ -93,7 +93,6 @@ function moveHead() {
     if (lastScore > biggestScore) biggestScore = lastScore;
 
     gamesPlayed++;
-    losses++;
 
     localStorage.setItem("lastScore", lastScore);
     localStorage.setItem("biggestScore", biggestScore);
