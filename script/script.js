@@ -128,7 +128,6 @@ function generateFood(){
 //-Update displayed statistics-
 function updateStats() {
   gamesPlayedDiv.textContent = "Games Played: " + gamesPlayed;
-  lossesDiv.textContent = "Losses: " + losses;
   lastScoreDiv.textContent = "Last Score: " + lastScore;
   biggestScoreDiv.textContent = "Biggest Score: " + biggestScore;
 }
